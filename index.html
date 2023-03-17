@@ -15,24 +15,33 @@
   <link rel="stylesheet" href="style.css">
   <title>NFT preview card component</title>
 </head>
+
 <body>
   <main class="main">
     <h1 class="main-h1">Equilibrium NFT</h1>
+
     <article class="nft-card">
+
       <figure class="nft-card__figure">
         <img src="./images/image-equilibrium.jpg" alt="The NFT image called equilibrium" class="nft-card__figure--img">
+        <img src="./images/icon-view.svg" alt="svg of an eye" class="nft-card__figure--hover">
       </figure>
       <h2 class="nft-card__title">Equilibrium #3429</h2>
       <p class="nft-card__description">Our Equilibrium collection promotes balance and calm.</p>
+
       <div class="nft-card__cost-time">
-        <figure class="nft-card__cost-time__figure nft-card__cost-time__figure--ethereum">
-          <img src="./images/icon-ethereum.svg" alt="Logo del Ethereum" class="nft-card__cost-time__figure__logo nft-card__cost-time__figure__logo--eth">
-        </figure>
-        <span class="nft-card__cost-time--cost">0.041 ETH</span>
-        <figure class="nft-card__cost-time__figure nft-card__cost-time__figure--time">
-          <img src="./images/icon-clock.svg" alt="Logo del Ethereum" class="nft-card__cost-time__figure__logo nft-card__cost-time__figure__logo--time">
-        </figure>
-        <span class="nft-card__cost-time--time">3 days left</span>
+        <div class="nft-card__cost-time--container">
+          <figure class="nft-card__cost-time__figure nft-card__cost-time__figure--ethereum">
+            <img src="./images/icon-ethereum.svg" alt="Logo del Ethereum" class="nft-card__cost-time__figure__logo nft-card__cost-time__figure__logo--eth">
+          </figure>
+          <span class="nft-card__cost-time--cost">0.041 ETH</span>
+        </div>
+        <div class="nft-card__cost-time--container">
+          <figure class="nft-card__cost-time__figure nft-card__cost-time__figure--time">
+            <img src="./images/icon-clock.svg" alt="Logo del Ethereum" class="nft-card__cost-time__figure__logo nft-card__cost-time__figure__logo--time">
+          </figure>
+          <span class="nft-card__cost-time--time">3 days left</span>
+        </div>
       </div>
       <footer class="nft-card__footer">
         <figure class="nft-card__footer__figure">
