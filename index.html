@@ -2,32 +2,46 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A beginner practice from Frontend mentor on how to create a component">
+  <meta name="keywords" content="HTML, CSS">
+  <meta name="author" content="Esthedav">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | NFT preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="./images/83and4train.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <title>NFT preview card component</title>
 </head>
 <body>
-
-  Equilibrium #3429
-
-  Our Equilibrium collection promotes balance and calm.
-
-  0.041 ETH
-  3 days left
+  <main class="main">
+    <h1 class="main-h1">Equilibrium NFT</h1>
+    <article class="nft-card">
+      <figure class="nft-card__figure">
+        <img src="./images/image-equilibrium.jpg" alt="The NFT image called equilibrium" class="nft-card__figure--img">
+      </figure>
+      <h2 class="nft-card__title">Equilibrium #3429</h2>
+      <p class="nft-card__description">Our Equilibrium collection promotes balance and calm.</p>
+      <div class="nft-card__cost-time">
+        <figure class="nft-card__cost-time__figure nft-card__cost-time__figure--ethereum">
+          <img src="./images/icon-ethereum.svg" alt="Logo del Ethereum" class="nft-card__cost-time__figure__logo nft-card__cost-time__figure__logo--eth">
+        </figure>
+        <span class="nft-card__cost-time--cost">0.041 ETH</span>
+        <figure class="nft-card__cost-time__figure nft-card__cost-time__figure--time">
+          <img src="./images/icon-clock.svg" alt="Logo del Ethereum" class="nft-card__cost-time__figure__logo nft-card__cost-time__figure__logo--time">
+        </figure>
+        <span class="nft-card__cost-time--time">3 days left</span>
+      </div>
+      <footer class="nft-card__footer">
+        <figure class="nft-card__footer__figure">
+          <img src="./images/image-avatar.png" alt="Avatar img of Jules Wyvern" class="nft-card__footer__figure__img">
+        </figure>
+        <p class="nft-card__footer__creator">Creation of <span class="nft-card__footer__creator--span">Jules Wyvern</span></p>
+      </footer>
+    </article>
+  </main>
   
-  Creation of Jules Wyvern
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
 </html>
